@@ -1,0 +1,13 @@
+Introduction
+==================
+
+This module ``MolecularGeometry`` is designed to provide 
+two interfaces for measuring geometric quantities of
+a molecule: one for the general array inputs and the
+other for ``MolecularSystem`` objects.
+All measurement functions are just ``methods`` for
+function ``gage()``.
+Different quantities are specified by the 
+first argument which is a Julia type object. 
+
+.. jl:autofile:: src/MolecularGeometry.jl
