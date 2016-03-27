@@ -5,7 +5,6 @@ The following quantities are supported:
 | Quantity                          | function                       |
 |-----------------------------------|--------------------------------|
 | geometric center                  |  measure(:geometric_center,obj)|
-|-----------------------------------|--------------------------------|
 
 
 ### COPYRIGHT
