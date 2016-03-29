@@ -18,10 +18,10 @@ export GeometricCenter
 export gage
 
 # types
-include(joinpath("type", "abstract", "GeometricCenter.jl"))
+include(joinpath("type", "all.jl"))
 
 # functions
 ## geometric center
-include(joinpath("function", "geometric_center", "all.jl"))
+include(joinpath("function", "all.jl"))
 
 end

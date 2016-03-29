@@ -5,4 +5,4 @@ using MolecularGeometry
 import MolecularGeometry.gage
 
 
-include(joinpath("function", "geometric_center", "runtests.jl"))
+include(joinpath("function","runtests.jl"))
