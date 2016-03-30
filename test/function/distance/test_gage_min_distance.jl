@@ -15,11 +15,11 @@ solution:Number
 msg="":AbstractString
     abstract string 
 """
-function test_gage_min_distance(array1::Array, array2::Array, msg::AbstractString="")
+function test_gage_min_distance(array1::Array, array2::Array, solution::Number, msg::AbstractString="")
     println("-------------------------------------")
     print_with_color(:blue, "Test gage(MinDistance,...)\n\n")
     if msg != ""
-        print_with_color(:blue, '$(msg)\n\n')
+        print_with_color(:blue, "$(msg)\n\n")
     end
 
     answer = gage(MinDistance,array1,array2)
@@ -30,3 +30,6 @@ function test_gage_min_distance(array1::Array, array2::Array, msg::AbstractStrin
 
     return true
 end
+include("unit_test_1_gage_min_distance.jl")
+include("unit_test_2_gage_min_distance.jl")
+include("unit_test_3_gage_min_distance.jl")

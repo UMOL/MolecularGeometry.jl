@@ -13,8 +13,13 @@ The following quantities are supported:
 
 """
 module MolecularGeometry
+using Distances
 
-export GeometricCenter
+macro debug(expression)
+    return :($expression)
+end
+
+export GeometricCenter, MinDistance
 export gage
 
 # types
