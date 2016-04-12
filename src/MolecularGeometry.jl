@@ -19,7 +19,7 @@ macro debug(expression)
     return :($expression)
 end
 
-export GeometricCenter, MinDistance
+export GeometricCenter, MinDistance, PrincipalAxes
 export gage
 
 # types
