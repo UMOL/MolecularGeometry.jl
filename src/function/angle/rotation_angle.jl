@@ -14,5 +14,5 @@ vector_2:Array
     the target vector to be aligned to
 """
 function gage(::Type{RotationAngle}, vector_1::Array, vector_2::Array2)
-
+    
 end
