@@ -19,11 +19,12 @@ function test_gage_principal_axes(coordinates::Array, solution::Array, msg::Abst
         print_with_color(:blue, "$(msg)\n\n")
     end
 
-    answer = gage(PrincipalAxes, coordinates)
+    @time answer = gage(PrincipalAxes, coordinates)
 
     @test_approx_eq answer solution
 
     print_with_color(:green, "VERIFIED!\n\n")
+    println("=================================")
 
     return true
 end
