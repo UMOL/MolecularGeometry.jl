@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"Abst",
+				"AbstractFloat"
+			],
+			[
+				"vect1",
+				"vector_1"
+			],
+			[
+				"vect",
+				"vector_2"
+			],
+			[
+				"N",
+				"NEARLY_ZERO_THRESHOLD"
+			],
+			[
+				"near",
+				"nearly_zero"
+			],
+			[
+				"NEAR",
+				"NEARLY_ZERO_LIMIT"
+			],
+			[
+				"vec",
+				"vector_1"
+			],
+			[
 				"test",
 				"test_gage_principal_axes"
 			],
@@ -209,10 +237,36 @@
 	},
 	"expanded_folders":
 	[
-		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry"
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/function",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/function/angle",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/type",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/type/abstract",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/sublime",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test/function",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test/function/angle"
 	],
 	"file_history":
 	[
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/function/angle/all.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test/function/angle/runtests.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/MolecularGeometry.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/function/angle/gage_RotationAngle2D.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test/function/angle/test_gage_RotationAngle3D.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test/function/angle/test_gage_RotationAngle2D.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test/function/angle/test_gage_rotation_angle.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test/function/runtests.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/function/angle/gage_RotationAngle3D.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/type/abstract/RotationAngle/all.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/type/abstract/RotationAngle/RotationAngle2D.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/function/angle/nearly_zero.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test/function/angle/test_nearly_zero.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/type/abstract/all.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/type/abstract/RotationAngle/RotationAngle3D.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/type/abstract/RotationAngle/RotationAngle1D.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/type/abstract/RotationAngle.jl",
 		"/I/DEVELOP/umol/julia/uMOL/pkg/MolecularGeometry/test/function/runtests.jl",
 		"/I/DEVELOP/umol/julia/uMOL/pkg/MolecularGeometry/src/type/all.jl",
 		"/I/DEVELOP/umol/julia/uMOL/pkg/MolecularGeometry/src/MolecularGeometry.jl",
@@ -221,7 +275,6 @@
 		"/I/DEVELOP/umol/julia/uMOL/pkg/MolecularGeometry/test/runtests.jl",
 		"/I/DEVELOP/umol/julia/uMOL/pkg/MolecularGeometry/test/function/principal_axes/runtests.jl",
 		"/I/DEVELOP/umol/julia/uMOL/pkg/MolecularGeometry/test/function/principal_axes/test_gage_principal_axes.jl",
-		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/type/abstract/all.jl",
 		"/I/DEVELOP/umol/julia/uMOL/pkg/MolecularGeometry/src/type/abstract/GeometricCenter.jl",
 		"/I/DEVELOP/umol/julia/uMOL/pkg/MolecularGeometry/src/type/abstract/PrincipalAxes.jl",
 		"/I/DEVELOP/umol/julia/uMOL/pkg/MolecularGeometry/src/function/all.jl",
@@ -324,23 +377,7 @@
 		"/I/DEVELOP/umol/julia/UMOL/pkg/PDB/src/function/convert/find_residues.jl",
 		"/I/DEVELOP/umol/julia/UMOL/pkg/PDB/data/VMD/1_line_VMD.pdb",
 		"/I/DEVELOP/umol/julia/UMOL/pkg/PDB/src/type/PdbRecord/PdbRecord.jl",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/PDB/src/PDB.jl",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/PDB/src/function/convert/convert.jl",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/PDB/src/function/common/convert_PdbRecord_to_MolecularSystem.jl",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/PDB/test/type/runtests.jl",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/PDB/test/runtests.jl",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/PDB/test/type/PdbRecord/test_comparison_PdbRecord.jl",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/DataType/test/params.jl",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/DataType/la_auto.lua",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/DataType/LICENSE.md",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/DataType/REQUIRE",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/DataType/README.md",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/PDB/README.md",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/PDB/TODO.md",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/DataType/try.jl",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/DataType/src/DataType.jl",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/DataType/test/runtests.jl",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/DataType/src/try.jl"
+		"/I/DEVELOP/umol/julia/UMOL/pkg/PDB/src/PDB.jl"
 	],
 	"find":
 	{
@@ -359,6 +396,21 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"Array",
+			"RotationAngle3D",
+			"RotationAngle",
+			"\")",
+			"false",
+			"limit",
+			"3",
+			"RotationAngle3D",
+			"rotation_angle_3D",
+			"RotationAngle2D",
+			"RotationAngle1D",
+			"RotationAngle",
+			"Number",
+			"principal_axes",
+			"rotation_angle",
 			"geometric_center",
 			"principal_axes",
 			"PrincipalAxes",
@@ -471,22 +523,7 @@
 			"\n                <section data-markdown=\"sections/function.md\"\n                        data-separator=\"^\\n\\n\\n\"\n                        data-separator-vertical=\"^\\n\\n\"\n                        data-separator-notes=\"^Note:\"\n                        data-charset=\"iso-8859-15\">\n                </section>\n",
 			"static",
 			"julia-logo.svg",
-			"html",
-			"_static",
-			"_sources",
-			"_static",
-			"_sources",
-			"_static",
-			"inters",
-			"update_builder",
-			"umol",
-			"code",
-			"whit1994",
-			"whit94",
-			"BAKE2011",
-			"SCHR2013",
-			"SAIE2003",
-			"QUIC2003"
+			"html"
 		],
 		"highlight": true,
 		"in_selection": false,

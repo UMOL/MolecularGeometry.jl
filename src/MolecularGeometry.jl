@@ -21,7 +21,7 @@ end
 
 export GeometricCenter, MinDistance, PrincipalAxes
 export RotationAngle2D, RotationAngle3D
-export gage, nearly_zero
+export gage, nearly_zero, smaller_vector
 
 # types
 include(joinpath("type", "all.jl"))

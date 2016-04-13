@@ -16,5 +16,5 @@ vector_2:Array
 function gage(::Type{RotationAngle3D}, vector_1::Array, vector_2::Array)
     @debug @assert length(vector_1) == 3
     @debug @assert length(vector_2) == 3
-       
+    
 end
