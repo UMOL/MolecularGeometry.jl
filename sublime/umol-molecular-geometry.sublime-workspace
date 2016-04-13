@@ -209,16 +209,7 @@
 	},
 	"expanded_folders":
 	[
-		"/I/DEVELOP/umol/julia/uMOL/pkg/MolecularGeometry",
-		"/I/DEVELOP/umol/julia/uMOL/pkg/MolecularGeometry/src",
-		"/I/DEVELOP/umol/julia/uMOL/pkg/MolecularGeometry/src/function",
-		"/I/DEVELOP/umol/julia/uMOL/pkg/MolecularGeometry/src/function/principal_axes",
-		"/I/DEVELOP/umol/julia/uMOL/pkg/MolecularGeometry/src/type",
-		"/I/DEVELOP/umol/julia/uMOL/pkg/MolecularGeometry/sublime",
-		"/I/DEVELOP/umol/julia/uMOL/pkg/MolecularGeometry/test",
-		"/I/DEVELOP/umol/julia/uMOL/pkg/MolecularGeometry/test/function",
-		"/I/DEVELOP/umol/julia/uMOL/pkg/MolecularGeometry/test/function/geometric_center",
-		"/I/DEVELOP/umol/julia/uMOL/pkg/MolecularGeometry/test/function/principal_axes"
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry"
 	],
 	"file_history":
 	[
@@ -353,7 +344,7 @@
 	],
 	"find":
 	{
-		"height": 43.0
+		"height": 30.0
 	},
 	"find_in_files":
 	{
@@ -522,7 +513,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 25.0
+		"height": 30.0
 	},
 	"input":
 	{
@@ -559,7 +550,7 @@
 	"project": "umol-molecular-geometry.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 56.0
 	},
 	"save_all_on_build": true,
 	"select_file":

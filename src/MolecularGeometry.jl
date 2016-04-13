@@ -20,6 +20,7 @@ macro debug(expression)
 end
 
 export GeometricCenter, MinDistance, PrincipalAxes
+export RotationAngle
 export gage
 
 # types
