@@ -20,14 +20,13 @@ macro debug(expression)
 end
 
 export GeometricCenter, MinDistance, PrincipalAxes
-export RotationAngle
-export gage
+export RotationAngle2D, RotationAngle3D
+export gage, nearly_zero
 
 # types
 include(joinpath("type", "all.jl"))
 
 # functions
-## geometric center
 include(joinpath("function", "all.jl"))
 
 end
