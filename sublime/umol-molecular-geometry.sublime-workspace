@@ -241,24 +241,31 @@
 		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src",
 		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/function",
 		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/function/angle",
-		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/type",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/function/toolkit",
 		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/type/abstract",
 		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/sublime",
 		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test",
 		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test/function",
-		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test/function/angle"
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test/function/angle",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test/function/toolkit"
 	],
 	"file_history":
 	[
-		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/function/angle/all.jl",
-		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test/function/angle/runtests.jl",
 		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/MolecularGeometry.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/function/angle/gage_RotationAngle3D.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/function/angle/smaller_vector.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test/function/angle/runtests.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test/function/toolkit/runtests.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test/function/toolkit/test_nearly_zero.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test/function/runtests.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/function/toolkit/all.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/function/all.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test/function/toolkit/test_smaller_vector.jl",
+		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/function/angle/all.jl",
 		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/function/angle/gage_RotationAngle2D.jl",
 		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test/function/angle/test_gage_RotationAngle3D.jl",
 		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test/function/angle/test_gage_RotationAngle2D.jl",
 		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test/function/angle/test_gage_rotation_angle.jl",
-		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/test/function/runtests.jl",
-		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/function/angle/gage_RotationAngle3D.jl",
 		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/type/abstract/RotationAngle/all.jl",
 		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/type/abstract/RotationAngle/RotationAngle2D.jl",
 		"/I/DEVELOP/umol/julia/develop/uMOL-develop/deps/MolecularGeometry/src/function/angle/nearly_zero.jl",
@@ -371,13 +378,7 @@
 		"/I/DEVELOP/umol/julia/UMOL/pkg/MolecularDataType/test/Segment/test_find_segments.jl",
 		"/I/DEVELOP/umol/julia/UMOL/pkg/MolecularDataType/test/Segment/test_comparison_Segment.jl",
 		"/I/DEVELOP/umol/julia/UMOL/pkg/PDB/data/VMD/many_segments_VMD.pdb",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/PDB/src/function/convert/find_segments.jl",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/PDB/test/convert/test_find_segments.jl",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/PDB/test/test_tools/compare_dict_of_arrays.jl",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/PDB/src/function/convert/find_residues.jl",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/PDB/data/VMD/1_line_VMD.pdb",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/PDB/src/type/PdbRecord/PdbRecord.jl",
-		"/I/DEVELOP/umol/julia/UMOL/pkg/PDB/src/PDB.jl"
+		"/I/DEVELOP/umol/julia/UMOL/pkg/PDB/src/function/convert/find_segments.jl"
 	],
 	"find":
 	{

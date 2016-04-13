@@ -24,6 +24,11 @@ function test_smaller_vector(input::Array, i::Integer, solution::Array, msg::Abs
     answer = smaller_vector(input, i)
     @test answer == solution
     print_with_color(:green, "VERIFIED!\n")
+    println("-------------------------------------")
     return true
 end
 test_smaller_vector([1,2,3],1,[2,3],"test 1")
+test_smaller_vector([1,2,3],2,[1,3],"test 2")
+test_smaller_vector([1,2,3],3,[1,2],"test 3")
+test_smaller_vector([1,2,3],4,[1,2,3],"test 4")
+test_smaller_vector([1,2,3],0,[1,2,3],"test 5")

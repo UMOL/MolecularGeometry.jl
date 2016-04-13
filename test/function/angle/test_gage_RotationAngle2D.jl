@@ -22,8 +22,8 @@ function test_gage_RotationAngle2D(vector_1::Array, vector_2::Array, solution::A
         print_with_color(:blue, "$(msg)\n\n")
     end
 
-    answer = gage(RotationAngle2D, vector_1, vector_2)
-    @test answer == solution
+    @time answer = gage(RotationAngle2D, vector_1, vector_2)
+    @test_approx_eq answer solution
 
     print_with_color(:green, "VERIFIED!\n")
     println("-----------------------------------------")
