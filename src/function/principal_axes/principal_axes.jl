@@ -14,6 +14,16 @@ coordinates:Array
     must be a 2D matrix and must have exactly 3 columns
 """
 function gage(::Type{PrincipalAxes},coordinates::Array)
+    if length(coordinates) == 0
+        return Array{AbstractFloat,1}()
+    end
+
+    # If input coordinates is an array of array
+    # then convert it to a 2D matrix
+    if issubtype(typeof(coordinates[1]), Array)
+        coordinates = vcat([x' for x in coordinates]...)
+    end
+
     shape = size(coordinates)
     @debug @assert length(shape) == 2
     @debug @assert shape[2] == 3
