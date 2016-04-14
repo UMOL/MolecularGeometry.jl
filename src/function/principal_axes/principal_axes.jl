@@ -4,6 +4,9 @@ defined by the input coordinates.
 The order of the principals axes is sorted
 by the eigenvalues of the moment of inertia matrix
 (from low to high).
+Therefore the first column of the returned 
+principal axes matrix is the direction 
+along which the object is the most elongated.
 
 Arguments
 -----------
