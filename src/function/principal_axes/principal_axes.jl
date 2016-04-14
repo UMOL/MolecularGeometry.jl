@@ -21,6 +21,7 @@ function gage(::Type{PrincipalAxes},coordinates::Array)
         return Array{AbstractFloat,1}()
     end
 
+
     # If input coordinates is an array of array
     # then convert it to a 2D matrix
     if issubtype(typeof(coordinates[1]), Array)
