@@ -4,6 +4,10 @@ def angle2D(vec1,vec2):
     length1 = np.linalg.norm(vec1)
     length2 = np.linalg.norm(vec2)
     print("length ", length1, length2)
+    if length1 < 1e-16:
+        return 0.
+    if length2 < 1e-16:
+        return 0.
     return np.arccos(np.dot(vec1,vec2)/(length1*length2))
 
 def angle3D(vec1, vec2):
@@ -25,4 +29,7 @@ def angle3D(vec1, vec2):
 np.set_printoptions(precision=18)
 v1    = np.array([-5.908280911892572,-1.04509170227587,-3.0])
 v_ref = np.array([-5.908280911892572,-1.04509170227587,-8.0])
+
+v1 = np.array([0., 0., 1.])
+v_ref = np.array([-6.758097397797128,6.190970809322855,4.0])
 print(angle3D(v1,v_ref), )
