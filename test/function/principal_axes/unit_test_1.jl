@@ -1,0 +1,1 @@
+test_gage_principal_axes([1. 0. 0.;], eye(3), "unit vector along X")

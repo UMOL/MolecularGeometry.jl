@@ -10,54 +10,31 @@ solution:Array
     answer key
 
 msg="":AbstractString
-    optional test message
+    (optional) test message
+
+center=[]:AbstractArray
+    (keyword) center of rotation
 """
-function test_gage_principal_axes(coordinates::Array, solution::Array, msg::AbstractString="")
-    println("=================================")
+function test_gage_principal_axes(coordinates::Array, solution::Array, msg::AbstractString=""; center::AbstractArray=[])
+    print_dashed_line(80)
     print_with_color(:blue, "Test gage(PrincipalAxes,...)\n\n")
     if msg != ""
         print_with_color(:blue, "$(msg)\n\n")
     end
 
-    @time answer = gage(PrincipalAxes, coordinates)
+    @time answer = gage(PrincipalAxes, coordinates; center=center)
 
     @test_approx_eq answer solution
 
     print_with_color(:green, "VERIFIED!\n\n")
-    println("=================================")
+    print_dashed_line(80)
 
     return true
 end
 
-test_gage_principal_axes([1. 0. 0.;], eye(3), "unit vector along X")
-test_gage_principal_axes(
-    [1. 1. 0.;
-     0. 0. 0.;], 
-    [sqrt(2)/2. -sqrt(2)/2. 0.0;
-     sqrt(2)/2. sqrt(2)/2. 0.0;
-     0.0 0.0 1.0], "vector in the X-Y plane")
-test_gage_principal_axes(
-    [0. 1. 1.;
-     0. 0. 0.;], 
-    [0.  1.  0.;
-     sqrt(2)/2. 0. -sqrt(2)/2.;
-     sqrt(2)/2. 0. sqrt(2)/2. ], "vector in the Y-Z plane")
-
-test_gage_principal_axes(
-    Array[[0., 1., 1.],
-     [0., 0., 0.]], 
-    [0.  1.  0.;
-     sqrt(2)/2. 0. -sqrt(2)/2.;
-     sqrt(2)/2. 0. sqrt(2)/2. ], "test using array of arrays a input")
-
-test_gage_principal_axes(
-    Array[
-     [1., 0., 0.],
-     [0., 1., 0.],
-     [1., 1., 0.]], 
-    [sqrt(2)/2. -sqrt(2)/2. 0.;
-     sqrt(2)/2.  sqrt(2)/2. 0.;
-     0.          0.         1.], "test using array of 3 vectors as input")
-
-
-
+include("unit_test_1.jl")
+include("unit_test_2.jl")
+include("unit_test_3.jl")
+include("unit_test_4.jl")
+include("unit_test_5.jl")
+include("unit_test_6.jl")

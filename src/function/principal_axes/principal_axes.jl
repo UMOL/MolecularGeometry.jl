@@ -13,10 +13,13 @@ Arguments
 :Type{PrincipalAxes}
     must be type `PrincipalAxes`
 
-coordinates:Array
+coordinates:AbstractArray
     must be a 2D matrix and must have exactly 3 columns
+
+center=[]:AbstractArray
+    (keyword) center of rotation
 """
-function gage(::Type{PrincipalAxes},coordinates::Array)
+function gage(::Type{PrincipalAxes},coordinates::AbstractArray; center::AbstractArray=[])
     if length(coordinates) == 0
         return Array{AbstractFloat,1}()
     end
@@ -26,6 +29,11 @@ function gage(::Type{PrincipalAxes},coordinates::Array)
     # then convert it to a 2D matrix
     if issubtype(typeof(coordinates[1]), Array)
         coordinates = vcat([x' for x in coordinates]...)
+    end
+
+    # change rotation center
+    if length(center) == 3
+        coordinates = coordinates .- transpose(center)
     end
 
     shape = size(coordinates)
