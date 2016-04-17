@@ -1,4 +1,5 @@
 using Base.Test
+include("print_dashed_line.jl")
 
 include(joinpath("..", "src", "MolecularGeometry.jl"))
 using MolecularGeometry

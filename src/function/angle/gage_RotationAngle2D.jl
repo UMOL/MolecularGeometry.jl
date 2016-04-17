@@ -26,6 +26,18 @@ function gage(::Type{RotationAngle2D}, vector_1::Array, vector_2::Array)
     elseif nearly_zero(norm(vector_2,2), NEARLY_ZERO_THRESHOLD)
         return 0.
     else
-        return acos(dot(vector_1, vector_2)/(norm(vector_1,2)*norm(vector_2,2)))
+        #= developer's note: (Yuhang Wang 04/17/2016)
+            Sometimes, the normalized dot product is > 1 or < -1 due to
+            error in floating point division.
+            Without proper handling, Julia will report domain error. 
+        =#
+        normalized_dot = dot(vector_1/norm(vector_1,2), vector_2/norm(vector_2,2))
+        if normalized_dot > 1.0 
+            return acos(floor(normalized_dot))
+        elseif normalized_dot < -1.0
+            return acos(ceil(normalized_dot))
+        else 
+            return acos(normalized_dot)
+        end
     end
 end
