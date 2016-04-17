@@ -10,11 +10,13 @@ array::Array
     a floating point array
 """
 function gage(::Type{GeometricCenter}, array::Array)
-    dimension = length(size(array))
-
-    if dimension == 1
-        return array
+    if issubtype(typeof(array[1]), AbstractArray)
+        return gage_array_of_arrays(GeometricCenter, array)
     else
-        return mean(array, 1)
+        if length(size(array)) == 1 # check array dimension
+            return array
+        else
+            return mean(array, 1)
+        end
     end
 end

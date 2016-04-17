@@ -6,18 +6,18 @@ Arguments
 :Type{GeometricCenter}
     must be the Julia Type object ``GeometricCenter``
 
-array:Array
-    a floating point array 
+array:AbstractArray
+    a floating point array or array of arrays
 
-solution:Array
+solution:AbstractArray
     answer key
 
 msg::AbstractString
     optional test message
 """
-function test_gage_array(::Type{GeometricCenter},
-    array::Array,
-    solution::Array,
+function test_gage(::Type{GeometricCenter},
+    array::AbstractArray,
+    solution::AbstractArray,
     msg::AbstractString)
     
     println("-----------------------------------")
@@ -26,7 +26,7 @@ function test_gage_array(::Type{GeometricCenter},
         print_with_color(:blue, "$(msg)\n")
     end
 
-    answer = gage(GeometricCenter, array)
+    @time answer = gage(GeometricCenter, array)
 
     @test_approx_eq answer solution
 
@@ -40,3 +40,5 @@ end
 
 include("unit_test_1_gage_array.jl")
 include("unit_test_2_gage_array.jl")
+include("unit_test_1_gage_array_of_arrays.jl")
+include("unit_test_2_gage_array_of_arrays.jl")
