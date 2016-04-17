@@ -6,11 +6,11 @@ Arguments
 :Type{GeometricCenter}
     a Julia Type object and must be ``GeometricCenter``
 
-array::Array
+array::AbstractArray
     an array of floating point arrays 
 }
 """
-function gage_array_of_arrays(::Type{GeometricCenter}, array::Array)
+function gage_array_of_arrays(::Type{GeometricCenter}, array::AbstractArray)
     if length(array) == 0
         return Array{AbstractFloat,1}[]
     else
