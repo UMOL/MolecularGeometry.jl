@@ -14,7 +14,6 @@ The following quantities are supported:
 """
 module MolecularGeometry
 include(joinpath("..", "deps", "Distances", "src", "Distances.jl"))
-using Distances
 
 macro debug(expression)
     return :($expression)
